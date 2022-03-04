@@ -1,5 +1,6 @@
 import React from "react";
 import "./Profile.css";
+import "./Search.css"
 
 export default class Profile extends React.Component {
   constructor(props) {
@@ -52,12 +53,6 @@ export default class Profile extends React.Component {
           </div>
           <div className="profile-picture">
             <div className="profile-picture-background">
-              <img
-                alt="img-wa"
-                width={200}
-                height={400}
-                src="https://scontent.whatsapp.net/v/t39.8562-34/178505650_460141378430025_2455877548463147186_n.png?ccb=1-5&_nc_sid=2fbf2a&_nc_ohc=-jkhE09RQG8AX8_buZG&_nc_ht=scontent.whatsapp.net&oh=01_AVwhi_b5yz5GJJkNF9slSitpzRId3K7Go_gtfIjd5aZ0Zw&oe=6225A04C"
-              ></img>
             </div>
           </div>
         </div>
