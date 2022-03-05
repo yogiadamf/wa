@@ -1,12 +1,9 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
 
 export default function Footer() {
-    return (
-        <div className='footer-container'>
-            <div className='footer-parent'>
-                <img src={require('../assets/Home/shape-bg.png')} alt='no internet connection'/>
-            </div>            
-        </div>
-    )
+  return (
+    <div class="css-10fh2rl">
+      <p class="css-1uun52r"> Copyright © 2021 Aditya Eka </p>
+    </div>
+  );
 }

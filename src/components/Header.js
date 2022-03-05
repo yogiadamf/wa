@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import {
-  TOTAL_SCREENS,
-  GET_SCREEN_INDEX,
-} from "../utilities/commonUtils";
+import { TOTAL_SCREENS, GET_SCREEN_INDEX } from "../utilities/commonUtils";
 import ScrollService from "../utilities/ScrollService";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.css";
 
 export default function Header() {
@@ -65,7 +64,7 @@ export default function Header() {
           className="header-hamburger"
           onClick={() => setShowHeaderOptions(!showHeaderOptions)}
         >
-
+          <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
         </div>
         <div className="header-logo">
           <span>WhatsApp</span>
@@ -78,7 +77,13 @@ export default function Header() {
           }
         >
           {getHeaderOptions()}
+          <span className="header-sepa">
+          <a href="https://github.com/yogiadamf">
+          <button className="btn primary-btn">Github</button>
+        </a>
+        </span>
         </div>
+        
       </div>
     </div>
   );

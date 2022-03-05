@@ -32,7 +32,7 @@
 }
 
 .search_wrap .search_box .btn:hover{
-	background: #708bd2;	
+	background: #FF5823;	
 }
 
 .search_wrap .search_box .btn.btn_common .fas{
@@ -52,7 +52,7 @@
 .search_wrap.search_wrap_6 .search_box .btn{
 	width: 125px;
 	height: 45px;
-	top: 8px;
+	top: -8px;
 	right: 5px;
 	border-radius: 3px;
 	color: #fff;
@@ -96,6 +96,18 @@
     }
 }
 @media only screen and (max-width: 412px){
+    .search_wrap{
+        width: 312px;
+        margin: 38px auto;
+    }
+    
+    .search_wrap .search_box{
+        position: relative;
+        width: 320px;
+        height: 60px;
+    }
+}
+@media only screen and (max-width: 414px){
     .search_wrap{
         width: 312px;
         margin: 38px auto;

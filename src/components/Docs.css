@@ -1,0 +1,45 @@
+.docs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0 0;
+  }
+  .docs-parent {
+    max-width: 820px;
+    max-height: 520px;
+    
+  }
+  .docs-card {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0px 20px -2px #1f2235;
+  }
+  
+  /*IPAD PRO RESPONSIVENESS*/
+  @media only screen and (max-width: 1110px) {
+    .docs-parent {
+      width: 88%;
+    }
+  }
+  @media only screen and (max-width: 898px) {
+    .docs-profile {
+      display: none;
+    }
+    .docs-details {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 466px) {
+    .docs-options {
+      display: flex;
+      flex-direction: column;
+    }
+    .docs-options .highlighted-btn {
+      margin: 24px 0 0 0 !important;
+    }
+    .docs-options btn {
+      width: 100%;
+    }
+  }
+  

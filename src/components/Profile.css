@@ -119,6 +119,7 @@
     .profile-options, .profile-details-role{
         text-align: center;
     }
+    
 }
 @media screen and (max-width: 375px){
     .profile-picture{
