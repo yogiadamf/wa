@@ -122,7 +122,7 @@ export default function ContactMe(props) {
             <label htmlFor="name">Nama</label>
             <input type="text" name="name" onChange={handleName} value={name} />
 
-            <label htmlFor="email">email</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               name="user_email"
