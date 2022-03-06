@@ -23,5 +23,5 @@ https://yogiadamf.github.io/wa/
 
 # Installation
 - npm install
-- npm npm start
+- npm start
 - npm run deploy
