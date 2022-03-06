@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "/wa/static/css/main.844fa46e.css",
-    "main.js": "/wa/static/js/main.eeb833f2.js",
-    "static/js/787.e35f3d2a.chunk.js": "/wa/static/js/787.e35f3d2a.chunk.js",
-    "static/media/wa.mp4": "/wa/static/media/wa.6a3a4401dd021f6d0c9a.mp4",
-    "static/media/poster.png": "/wa/static/media/poster.c985f0a44c70c58e28f9.png",
-    "static/media/Poppins-Thin.ttf": "/wa/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
-    "static/media/Poppins-Light.ttf": "/wa/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
-    "static/media/Poppins-Regular.ttf": "/wa/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
-    "static/media/Poppins-Medium.ttf": "/wa/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
-    "static/media/Poppins-SemiBold.ttf": "/wa/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
-    "static/media/Poppins-Bold.ttf": "/wa/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
-    "static/media/Poppins-ExtraBold.ttf": "/wa/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
-    "static/media/mailz.jpeg": "/wa/static/media/mailz.d13d5e32cbc73884b526.jpeg",
-    "static/media/wa.png": "/wa/static/media/wa.2154418718ac7affab96.png",
+    "main.css": "/wa/static/css/main.ae0fe7f1.chunk.css",
+    "main.js": "/wa/static/js/main.3da1efce.chunk.js",
+    "main.js.map": "/wa/static/js/main.3da1efce.chunk.js.map",
+    "runtime-main.js": "/wa/static/js/runtime-main.680421df.js",
+    "runtime-main.js.map": "/wa/static/js/runtime-main.680421df.js.map",
+    "static/css/2.f4c56af9.chunk.css": "/wa/static/css/2.f4c56af9.chunk.css",
+    "static/js/2.0d421a7d.chunk.js": "/wa/static/js/2.0d421a7d.chunk.js",
+    "static/js/2.0d421a7d.chunk.js.map": "/wa/static/js/2.0d421a7d.chunk.js.map",
+    "static/js/3.646b9e74.chunk.js": "/wa/static/js/3.646b9e74.chunk.js",
+    "static/js/3.646b9e74.chunk.js.map": "/wa/static/js/3.646b9e74.chunk.js.map",
     "index.html": "/wa/index.html",
-    "main.844fa46e.css.map": "/wa/static/css/main.844fa46e.css.map",
-    "main.eeb833f2.js.map": "/wa/static/js/main.eeb833f2.js.map",
-    "787.e35f3d2a.chunk.js.map": "/wa/static/js/787.e35f3d2a.chunk.js.map"
+    "static/css/2.f4c56af9.chunk.css.map": "/wa/static/css/2.f4c56af9.chunk.css.map",
+    "static/css/main.ae0fe7f1.chunk.css.map": "/wa/static/css/main.ae0fe7f1.chunk.css.map",
+    "static/js/2.0d421a7d.chunk.js.LICENSE.txt": "/wa/static/js/2.0d421a7d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/wa/static/media/Poppins-Thin.a61eaf4c.ttf",
+    "static/media/poster.c985f0a4.png": "/wa/static/media/poster.c985f0a4.png",
+    "static/media/Home.css": "/wa/static/media/wa.21544187.png",
+    "static/media/wa.6a3a4401.mp4": "/wa/static/media/wa.6a3a4401.mp4"
   },
   "entrypoints": [
-    "static/css/main.844fa46e.css",
-    "static/js/main.eeb833f2.js"
+    "static/js/runtime-main.680421df.js",
+    "static/css/2.f4c56af9.chunk.css",
+    "static/js/2.0d421a7d.chunk.js",
+    "static/css/main.ae0fe7f1.chunk.css",
+    "static/js/main.3da1efce.chunk.js"
   ]
 }
