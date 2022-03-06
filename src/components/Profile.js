@@ -1,4 +1,5 @@
 import React from "react";
+import Anim from "./Anim";
 import "./Profile.css";
 import "./Search.css"
 
@@ -19,6 +20,7 @@ export default class Profile extends React.Component {
     e.preventDefault();
     window.location.href = `https://api.whatsapp.com/send/?phone=${this.state.value}&text&app_absent=0`;
   };
+  
   render() {
     return (
       <div className="profile-container">
@@ -51,10 +53,7 @@ export default class Profile extends React.Component {
               </span>
             </div>
           </div>
-          <div className="profile-picture">
-            <div className="profile-picture-background">
-            </div>
-          </div>
+          <Anim/>
         </div>
       </div>
     );

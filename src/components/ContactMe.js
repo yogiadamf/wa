@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-
 import Typical from "react-typical";
-
-import imgBack from "../../src/images/mailz.jpeg";
+import { ToastContainer, toast } from "react-toastify";
 import load1 from "../../src/images/load2.gif";
 import ScreenHeading from "../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../utilities/ScrollService";
 import Animations from "../utilities/Animation";
+import Lottie from "lottie-web";
+import Footer from "./Footer"
 import "./ContactMe.css";
 
 export default function ContactMe(props) {
@@ -22,17 +22,18 @@ export default function ContactMe(props) {
   const form = useRef();
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [user_email, setUser_email] = useState("");
   const [banner, setBanner] = useState("");
   const [bool, setBool] = useState(false);
 
-  function notif() {
-    alert("Message has been sent!. I will contact you soon 😎.");
-  }
   const handleName = (e) => {
     setName(e.target.value);
   };
   const handleMessage = (e) => {
     setMessage(e.target.value);
+  };
+  const handleEmail = (e) => {
+    setUser_email(e.target.value);
   };
   console.log(name);
   const sendEmail = (e) => {
@@ -46,18 +47,46 @@ export default function ContactMe(props) {
         "user_RJoBK8IKTuKVu0MnH3N5X"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          toast.success("Your email Has Been Sent!", {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          toast.error('🦄 Wow so easy!', {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
         }
       );
   };
 
+  const container = useRef(null)
+
+  useEffect(()=>{
+    Lottie.loadAnimation({
+      container: container.current,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: require('../assets/Home/Chating.json')
+    })
+  }, [])
+
   return (
     <div className="main-container fade-in" id={props.id || ""}>
-      <ScreenHeading subHeading={"Lets Keep In Touch"} title={"Contact Me"} />
+      <ScreenHeading subHeading={"Mari kita tetap berhubungan"} title={"Kontak Saya"} />
       <div className="central-form">
         <div className="col">
           <h2 className="title">
@@ -86,23 +115,22 @@ export default function ContactMe(props) {
           </a>
         </div>
         <div className="back-form">
-          <div className="img-back">
-            <h4>Send Your Email Here!</h4>
-            <img src={imgBack} alt="image not found" />
+          <div className="img-back" ref={container}>
           </div>
           <form ref={form} onSubmit={sendEmail}>
             <p>{banner}</p>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Nama</label>
             <input type="text" name="name" onChange={handleName} value={name} />
 
-            <label htmlFor="email">To Me</label>
+            <label htmlFor="email">email</label>
             <input
               type="email"
-              name="email"
-              defaultValue={"yogiadamf@gmail.com"}
+              name="user_email"
+              onChange={handleEmail}
+              value={user_email}
             />
 
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Pesan</label>
             <textarea
               type="text"
               name="message"
@@ -111,9 +139,9 @@ export default function ContactMe(props) {
             />
 
             <div className="send-btn">
-              <button type="submit" onClick={notif}>
-                send
-                <i className="fa fa-paper-plane" />
+              <button type="submit">
+                Send
+                <i className="fa fa-paper-plane fa-fw" />
                 {bool ? (
                   <b className="load">
                     <img src={load1} alt="image not responding" />
@@ -122,6 +150,17 @@ export default function ContactMe(props) {
                   ""
                 )}
               </button>
+              <ToastContainer
+                position="bottom-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              />
             </div>
           </form>
         </div>
@@ -129,6 +168,7 @@ export default function ContactMe(props) {
       <div class="footer">
         <p class="footer-text"> Copyright © 2022 Yogi Adam Firdaus </p>
       </div>
+      <Footer/>
     </div>
   );
 }

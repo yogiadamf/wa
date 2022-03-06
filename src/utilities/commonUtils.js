@@ -8,11 +8,11 @@ export const TOTAL_SCREENS = [
     component: Home,
   },
   {
-    screen_name: "Docs",
+    screen_name: "Dokumentasi",
     component: Docs,
   },
   {
-    screen_name: "Contact Me",
+    screen_name: "Kontak Saya",
     component: ContactMe,
   }
 ];

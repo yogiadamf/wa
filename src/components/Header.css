@@ -13,7 +13,11 @@
     color: var(--white);
   }
   .header-logo {
-    font-size: 50px;
+    width: 100px;
+
+  }
+  .header-text {
+    font-size: 30px;
     font-family: "Poppins ExtraBold";
     color: var(--white);
   }
@@ -47,6 +51,9 @@
     }
   }
   @media only screen and (max-width: 970px) {
+    .header-logo {
+      display: none;
+    }
     .header-hamburger {
       display: block;
     }

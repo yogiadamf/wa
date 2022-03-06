@@ -14,11 +14,11 @@
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
-    background-color: #1f2235;
+    background-color: #fff;
   }
   
   .central-form h2 {
-    color: #fff;
+    
     font-family: "Poppins Bold";
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
@@ -104,10 +104,10 @@
     outline: none;
     width: 900px;
     color: rgb(230, 227, 227);
-    border: 2px solid #ff5823;
+    border: 2px solid #fff;
     font-size: 12px;
     border-radius: 19px;
-    background-color: #1f2235;
+    background-color: #128c7e;
     font-size: 18px;
     width: 160px;
     align-items: center;
@@ -130,7 +130,7 @@
   }
   .col i {
     padding: 7px;
-    color: #fff;
+    color: #128c7e;
   }
   .col i:hover {
     transform: scale(1.5);

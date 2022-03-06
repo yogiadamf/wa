@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { TOTAL_SCREENS, GET_SCREEN_INDEX } from "../utilities/commonUtils";
 import ScrollService from "../utilities/ScrollService";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Lottie from "lottie-web";
 import "./Header.css";
 
 export default function Header() {
@@ -54,6 +55,19 @@ export default function Header() {
     };
   }, [currentScreenSubscription]);
 
+  const container = useRef(null)
+
+  useEffect(()=>{
+    Lottie.loadAnimation({
+      container: container.current,
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      animationData: require('../assets/Home/whatsapp.json')
+    })
+  }, [])
+
+
   return (
     <div
       className="header-container"
@@ -66,8 +80,10 @@ export default function Header() {
         >
           <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
         </div>
-        <div className="header-logo">
-          <span>WhatsApp</span>
+        <div className="header-logo" ref={container}>
+        </div>
+        <div className="header-text">
+        <span>WhatsApp</span>
         </div>
         <div
           className={
@@ -79,7 +95,7 @@ export default function Header() {
           {getHeaderOptions()}
           <span className="header-sepa">
           <a href="https://github.com/yogiadamf">
-          <button className="btn primary-btn">Github</button>
+          <button className="gitbtn">Github</button>
         </a>
         </span>
         </div>
